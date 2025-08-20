@@ -3319,8 +3319,7 @@ int GetCharPressed(void)
 // Get a pointer to the raw internal char array
 char* GetCurrentKeyState(void)
 {
-    static char* currentState = CORE.Input.Keyboard.currentKeyState;
-    return currentState;
+    return CORE.Input.Keyboard.currentKeyState;
 }
 
 // Set a custom key to exit program
